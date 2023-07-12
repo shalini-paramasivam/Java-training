@@ -1,0 +1,15 @@
+public class LastDigitAdder {
+    public static int addLastDigits(int input1, int input2) {
+        int lastDigit1 = Math.abs(input1) % 10;
+        int lastDigit2 = Math.abs(input2) % 10;
+        int sum = lastDigit1 + lastDigit2;
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        int input1 = 7895;
+        int input2 = 157;
+        int sum = addLastDigits(input1, input2);
+        System.out.println("Sum of Last Digits: " + sum);
+    }
+}
