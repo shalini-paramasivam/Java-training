@@ -1,0 +1,15 @@
+public class EvenChecker {
+    public static int checkEven(int number) {
+        if (number % 2 == 0) {
+            return 2; 
+        } else {
+            return 1; 
+        }
+    }
+
+    public static void main(String[] args) {
+        int number = 0;
+        int result = checkEven(number);
+        System.out.println("Result: " + result);
+    }
+}
