@@ -1,0 +1,12 @@
+public class FindLastDigit{
+    public static int getLastDigit(int number) {
+        int lastDigit = Math.abs(number) % 10;
+        return lastDigit;
+    }
+
+    public static void main(String[] args) {
+        int number = -135;
+        int lastDigit = getLastDigit(number);
+        System.out.println("Last Digit: " + lastDigit);
+    }
+}
